@@ -1,5 +1,6 @@
 import java.io.*;
 import java.math.*;
+import java.nio.file.Files;
 import java.text.*;
 import java.util.*;
 import java.util.regex.*;
@@ -20,7 +21,7 @@ public class Solution {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+        BufferedWriter bufferedWriter = Files.newBufferedWriter(System.getenv("OUTPUT_PATH").toPath());
 
         int arCount = Integer.parseInt(scanner.nextLine().trim());
 
